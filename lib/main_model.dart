@@ -11,4 +11,9 @@ class MainModel extends ChangeNotifier {
   String getText() {
     return this._inputText;
   }
+
+  void resetText() {
+    this._inputText = "";
+    notifyListeners();
+  }
 }

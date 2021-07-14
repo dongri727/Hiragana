@@ -119,6 +119,11 @@ class MyApp extends StatelessWidget {
                     }),
                   ),
                 ),
+                TextButton(
+                    onPressed: () {
+                      model.resetText();
+                    },
+                    child: Icon(Icons.delete)),
                 Text(
                   model.getText(),
                   style: TextStyle(fontSize: 24, color: Colors.indigo),
